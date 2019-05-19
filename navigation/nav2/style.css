@@ -1,0 +1,45 @@
+	* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f1f1f1;
+}
+ul {
+	list-style: none;
+}
+.menu {
+	width: 250px;
+	background: #fff;
+	box-shadow: 0 0 2px 0 rgba(0,0,0,.25)
+}
+.menu ul {
+	padding: 10px 0;
+	width: 100%;
+	position: relative;
+}
+.menu>ul>li>a, .menu2>ul>li>a, .menu3>ul>li>a {
+	display: block;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 6px 12px;
+	color: #333;
+}
+.menu>ul>li:hover>a, .menu2>ul>li:hover>a, .menu3>ul>li:hover>a {
+	background: #ebebeb;
+	font-weight: bold;
+}
+.menu>ul>li:hover .menu2, .menu2>ul>li:hover .menu3{
+	display: block;
+}
+
+.menu2, .menu3 {
+	display: none;
+	position: absolute;
+	left: 250px;
+	top: 0;
+	background: #fff;
+	width: 250px;
+	height: 375px;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,.25);
+}
